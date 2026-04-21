@@ -1,6 +1,5 @@
 # Ambientes virtuais
 venv/
-.venv/
 env/
 
 # Variáveis de ambiente (contém chaves de API)
