@@ -1,0 +1,47 @@
+Restaurante: Sakura
+Culinária: Japonesa
+Bairro: Centro
+Preço médio: R$45 por pessoa
+Avaliação: 4.8
+Especialidade: Sushi e sashimi frescos. Tem opção de rodízio às sextas.
+Horário: Seg a Dom, 11h às 23h
+
+Restaurante: Cantina Bella
+Culinária: Italiana
+Bairro: Bom Retiro
+Preço médio: R$38 por pessoa
+Avaliação: 4.6
+Especialidade: Massas artesanais e risoto de funghi. Ótimo para jantares românticos.
+Horário: Ter a Dom, 12h às 22h
+
+Restaurante: Churrascaria Gaúcha
+Culinária: Brasileira/Churrasco
+Bairro: Norte
+Preço médio: R$65 por pessoa
+Avaliação: 4.9
+Especialidade: Rodízio completo com mais de 15 cortes. Famoso pelo picanha e costela.
+Horário: Seg a Dom, 12h às 00h
+
+Restaurante: Sabor do Nordeste
+Culinária: Nordestina
+Bairro: Sul
+Preço médio: R$28 por pessoa
+Avaliação: 4.7
+Especialidade: Baião de dois, carne de sol e tapioca. O mais barato e autêntico da cidade.
+Horário: Seg a Sab, 10h às 20h
+
+Restaurante: Veggie Garden
+Culinária: Vegana/Vegetariana
+Bairro: Centro
+Preço médio: R$32 por pessoa
+Avaliação: 4.5
+Especialidade: Pratos 100% veganos. Famoso pelo burger de grão-de-bico e açaí bowl.
+Horário: Seg a Sex, 11h às 21h
+
+Restaurante: Thai House
+Culinária: Tailandesa
+Bairro: Leste
+Preço médio: R$42 por pessoa
+Avaliação: 4.6
+Especialidade: Pad Thai, curry verde e sopas. Único restaurante tailandês da cidade.
+Horário: Ter a Dom, 12h às 22h30

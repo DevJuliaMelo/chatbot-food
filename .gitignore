@@ -1,0 +1,19 @@
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# Variáveis de ambiente (contém chaves de API)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Banco vetorial gerado em tempo de execução
+faiss_index/
+
+# IDEs
+.vscode/
+.idea/
