@@ -26,7 +26,7 @@ app.add_middleware(
 loader = TextLoader("restaurantes.txt", encoding="utf-8")
 documentos = loader.load()
 
-splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=50)
+splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=100)
 chunks = splitter.split_documents(documentos)
 
 embeddings = FakeEmbeddings(size=1536)
