@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from langchain_core.documents import Document
 from langchain_community.document_loaders import TextLoader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import FakeEmbeddings
 from langchain_groq import ChatGroq
@@ -17,14 +17,26 @@ load_dotenv()
 chain = None
 
 
+def split_documents(documents, chunk_size=600, chunk_overlap=100):
+    chunks = []
+    for doc in documents:
+        text = doc.page_content
+        start = 0
+        while start < len(text):
+            end = min(start + chunk_size, len(text))
+            chunks.append(Document(page_content=text[start:end], metadata=doc.metadata))
+            if end == len(text):
+                break
+            start = end - chunk_overlap
+    return chunks
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global chain
     loader = TextLoader("restaurantes.txt", encoding="utf-8")
     documentos = loader.load()
-
-    splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=100)
-    chunks = splitter.split_documents(documentos)
+    chunks = split_documents(documentos)
 
     embeddings = FakeEmbeddings(size=1536)
     banco_vetorial = FAISS.from_documents(chunks, embeddings)
